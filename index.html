@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Registration Form</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h2>Registration Form</h2>
+    </header>
+    <section class="section">
+        <h4>Login</h4>
+    <form id="Registrationform">
+    <label for="name" class="bold">Name:</label>
+    <input type="text" placeholder="Enter your name">
+    <label for="email" class="bold">Email ID:</label>
+    <input type="text" placeholder="Enter your email">
+    <label for="password" class="bold">Password:</label>
+    <input type="password" placeholder="Enter your password">
+
+
+    <div class="gender">
+        <label class="bold">Gender</label>
+        <div class="radio">
+<label for="id1">
+<input type="radio" value="Male" name="gender" id="id1">Male
+</label>
+ <label for="id2">
+    <input type="radio" value="Female" name="gender" id="id2">Female
+</label>
+ <label for="id3">
+    <input type="radio" value="either" name="gender" id="id3">Prefer not to say
+</label>
+</div>
+</div>
+
+
+<div class="gender">
+<label class="bold">Skills</label>
+<div class="radio">
+ <label for="id4">
+    <input type="checkbox" value="check1" name="class" id="id4">HTML
+</label>
+<label for="id5">
+    <input type="checkbox" value="check1" name="class" id="id5">CSS
+</label>
+<label for="id6">
+    <input type="checkbox" value="check1" name="class" id="id6">Java Script
+</label>
+<label for="id7">
+    <input type="checkbox" value="check1" name="class" id="id7">C++
+</label>
+<label for="id8">
+    <input type="checkbox" value="check1" name="class" id="id8">Python
+</label>
+<label for="id9">
+    <input type="checkbox" value="check1" name="class" id="id9">Java
+</label>
+</div>
+</div>
+
+<label class="bold">City</label>
+<select name="city" id="city" onchange="showCityInput()">
+<option value="blank"></option>
+<option value="Bangalore">Bangalore</option>
+<option value="Mumbai">Mumbai</option>
+<option value="chennai">Chennai</option>
+<option value="Delhi">Delhi</option>
+<option value="Kerala">Kerala</option>
+<option value="others">Others</option>
+</select>
+
+<input type="text" id="otherCity" placeholder="Enter your city" style="display:none;">
+<label class="bold">Feedback</label>
+<textarea name="feedback" id="10" placeholder="Please give your valuable feedback here"></textarea>
+<input type="submit"  class="color" value="Submit">
+</form> 
+</section>
+</div>
+</body>
+</html>
